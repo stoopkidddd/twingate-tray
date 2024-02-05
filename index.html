@@ -1,13 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
-
+    <title>Twingate</title>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-    <script type="module" src="/src/renderer.ts"></script>
+    <div class="main">
+      <div style="padding-top: 2rem;" class="main">
+        <img class="logo" src="/images/icon512.png" alt="Twingate Logo" />
+        <h1>Connect to a Network</h1>
+        <p>Enter the network name to connect to:</p>
+        <div class="input-container">
+          <input id="network-name" type="text" />
+          <span>.twingate.com</span>
+        </div>
+      </div>
+      <div class="bottom">
+        <span class="bottom-btn-container">
+          <button id="connect-button">Join Network</button>
+        </span>
+      </div>
+      <script type="module" src="/src/renderer.ts"></script>
+    </div>
   </body>
 </html>
